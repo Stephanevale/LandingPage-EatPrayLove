@@ -1,0 +1,329 @@
+/* Remove padding, margin e border de todos os elementos  para garantir que todos os elementos comecem 
+com os mesmos valores básicos, proporcionando uma base consistente. */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* Estilo do cabeçalho */
+header {
+  background-color: #f1e6ab;
+  text-align: center;
+}
+
+body {
+  margin: auto; /* Centraliza o conteúdo do body */
+  font-family: "Merriweather", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Estilo para os parágrafos, ajustando o espaçamento e o alinhamento */
+p {
+  line-height: 20px; /* Espaçamento entre linhas do texto */
+  padding: 5px; /* Espaçamento interno ao redor do texto */
+}
+
+/* Define o layout da menu usando flexbox para organização horizontal (flexbox ajuda a distribuir 
+espaço e alinhar itens dentro do contêiner, mesmo quando seu tamanho é desconhecido ou dinâmico) */
+.menu {
+  display: flex;
+}
+
+/* Estilo para o título dentro da classe .nome-cabecalho */
+.nome-cabecalho h1 {
+  padding-top: 15px;
+  color: #694b17;
+  text-align: center;
+  margin: 0 10px 10px 10px;
+}
+
+/* Estilo para a lista de navegação */
+.nav-list ul {
+  display: flex;
+  justify-content: center;
+  list-style: none; /* Remove os marcadores da lista */
+  padding: 10px; /* Espaçamento interno ao redor da lista */
+  margin: 5px; /* Espaçamento externo ao redor da lista */
+}
+
+/* Estilo para os itens da lista de navegação */
+.nav-item {
+  padding-inline: 20px; /* Espaçamento lateral interno dos itens da lista */
+}
+
+/* Estilo para os links de navegação */
+.nav-link {
+  text-decoration: none; /* Remove o sublinhado dos links */
+  color: #694b17;
+}
+
+/* Estilo para o estado de hover dos links de navegação */
+.nav-link:hover {
+  color: #a63e45;
+}
+
+section {
+  text-align: justify;
+  font-family: "Merriweather", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #f1e6a8;
+  margin: 0 122px;
+  padding: 10px 30px;
+}
+
+/* Estilo padrão para listas não ordenadas */
+ul {
+  list-style: none; /* Remove os marcadores de lista */
+  padding: 15px; /* Espaçamento interno ao redor da lista */
+}
+
+/* Estilo para itens de lista */
+li {
+  display: flex;
+  gap: 2px;
+  padding: 5px;
+}
+
+/* Estilo para cabeçalhos dentro das divs */
+div > h2,
+h3 {
+  text-align: center;
+  padding-top: 10px;
+}
+
+/* Estilo para cabeçalhos h4 dentro das divs */
+div > h4 {
+  text-align: left;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+/* Estilo para parágrafos dentro das divs */
+div > p {
+  text-align: justify;
+  text-indent: 10px;
+  padding: 10px;
+}
+
+/* Estilo para elementos com ids específicos */
+#comer {
+  color: #e1ac06;
+}
+
+#rezar {
+  color: #a63e45;
+}
+
+#amar {
+  color: #c4897d;
+}
+
+/* Estilo específico para cabeçalhos h2 */
+h2 {
+  text-align: center;
+}
+
+/* Estilo específico para cabeçalhos h3 */
+h3 {
+  background-color: #f0d79c;
+  color: #694b17;
+  text-decoration: solid;
+}
+
+/* Estilo para parágrafos e itens de lista */
+p,
+li {
+  line-height: 20px;
+}
+
+/* Estilo para figuras e legendas de imagens */
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilo para legendas de imagens */
+figcaption {
+  text-align: center;
+  font-style: italic;
+}
+
+/* Estilo para imagens */
+img {
+  max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+  height: auto; /* Ajusta a altura automaticamente para manter a proporção */
+}
+
+/* Estilo para tabelas */
+table {
+  max-width: 800px; /* Largura máxima da tabela */
+  margin: auto; /* Centraliza a tabela horizontalmente */
+  border-collapse: collapse; /* Remove o espaçamento entre bordas das células */
+  border: 2px solid #694b17; /* Borda sólida ao redor da tabela */
+}
+
+/* Estilo para cabeçalhos e células da tabela */
+th,
+td {
+  padding: 8px; /* Espaçamento interno nas células da tabela */
+  text-align: left; /* Alinha o texto à esquerda dentro das células */
+  border: 2px solid #694b17; /* Borda sólida ao redor das células */
+}
+
+/* Estilo específico para cabeçalhos da tabela */
+th {
+  background-color: #f1e6ab;
+}
+
+/* Estilo específico para colunas da tabela */
+.dia {
+  min-width: 60px; /* Largura mínima para a coluna com a classe "dia" */
+}
+
+.destino {
+  width: 70px;
+  text-align: center;
+}
+
+/* Estilo para formulários */
+form {
+  max-width: 500px; /* Largura máxima do formulário */
+  margin: 0 auto 20px; /* Centraliza o formulário horizontalmente e define margem inferior */
+  padding: 20px;
+  background-color: #c4897d;
+  border: 1px solid #ccc; /* Borda cinza clara ao redor do formulário */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ao redor do formulário */
+  font-family: "Arial", sans-serif; /* Fonte padrão para o formulário */
+}
+
+/* Estilo para cabeçalhos dentro do formulário */
+form h2 {
+  margin-bottom: 20px;
+  color: black;
+}
+
+/* Estilo para labels dentro do formulário */
+form label {
+  text-align: left;
+  display: flex;
+  font-weight: bold;
+}
+
+/* Estilo para campos de texto, email e áreas de texto no formulário */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc; /* Borda cinza clara ao redor dos campos */
+  border-radius: 4px; /* Bordas arredondadas */
+  font-size: 16px;
+  background-color: #fff;
+}
+
+/* Estilo para elementos select no formulário */
+form select {
+  width: 94%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc; /* Borda cinza clara ao redor dos campos select */
+  border-radius: 4px; /* Bordas arredondadas */
+  font-size: 16px;
+  background-color: #fff;
+}
+
+/* Estilo para áreas de texto no formulário */
+form textarea {
+  resize: vertical; /* Permite redimensionar verticalmente */
+  min-height: 50px; /* Altura mínima da área de texto */
+}
+
+/* Estilo para o grupo de checkboxes dentro do formulário */
+#checkbox {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  padding-bottom: 10px;
+}
+
+/* Estilo para o botão de envio do formulário */
+form input[type="submit"] {
+  background-color: black;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer; /* Muda o cursor para uma mãozinha ao passar sobre o botão */
+  border-radius: 4px; /* Bordas arredondadas */
+}
+
+/* Estilo para o botão de envio quando está em estado de hover */
+form input[type="submit"]:hover {
+  transition: opacity 0.2s ease-in-out;
+  color: #fff;
+  background-color: #a63e45;
+  opacity: 0.9;
+}
+
+/* Estilo para o footer */
+footer {
+  background-color: #c4897d;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* Media Queries - Parte responsável pela responsividade */
+
+/* Estilo para dispositivos com largura máxima de 768px */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column; /* Organiza os itens do menu verticalmente em telas menores */
+  }
+
+  .nav-list ul {
+    flex-direction: column; /* Organiza os itens da lista de navegação verticalmente */
+  }
+
+  .nav-item {
+    padding-inline: 0;
+  }
+
+  section {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  table {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  form {
+    padding: 10px;
+  }
+
+  form input[type="text"],
+  form input[type="email"],
+  form textarea,
+  form select {
+    width: 95%;
+  }
+
+  form select {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}

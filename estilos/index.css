@@ -1,0 +1,169 @@
+/* Remove padding, margin e border de todos os elementos  para garantir que todos os elementos comecem 
+com os mesmos valores básicos, proporcionando uma base consistente. */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* Estilo do cabeçalho */
+header {
+  background-color: #f1e6ab;
+  text-align: center;
+}
+
+body {
+  margin: auto; /* Centraliza o conteúdo do body */
+  font-family: "Merriweather", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Estilo para os parágrafos, ajustando o espaçamento e o alinhamento */
+p {
+  line-height: 20px; /* Espaçamento entre linhas do texto */
+  padding: 5px; /* Espaçamento interno ao redor do texto */
+}
+
+/* Define o layout da menu usando flexbox para organização horizontal (flexbox ajuda a distribuir 
+espaço e alinhar itens dentro do contêiner, mesmo quando seu tamanho é desconhecido ou dinâmico) */
+.menu {
+  display: flex;
+}
+
+/* Estilo para o título dentro da classe .nome-cabecalho */
+.nome-cabecalho h1 {
+  padding-top: 15px;
+  color: #694b17;
+  text-align: center;
+  margin: 0 10px 10px 10px;
+}
+
+/* Estilo para a lista de navegação */
+.nav-list ul {
+  display: flex;
+  justify-content: center;
+  list-style: none; /* Remove os marcadores da lista */
+  padding: 10px; /* Espaçamento interno ao redor da lista */
+  margin: 5px; /* Espaçamento externo ao redor da lista */
+}
+
+/* Estilo para os itens da lista de navegação */
+.nav-item {
+  padding-inline: 20px; /* Espaçamento lateral interno dos itens da lista */
+}
+
+/* Estilo para os links de navegação */
+.nav-link {
+  text-decoration: none; /* Remove o sublinhado dos links */
+  color: #694b17;
+}
+
+/* Estilo para o estado de hover dos links de navegação */
+.nav-link:hover {
+  color: #a63e45;
+}
+
+/* Estilo para o conteúdo das seções */
+section {
+  display: flex;
+  flex-direction: row; /* Organiza os itens horizontalmente */
+  gap: 20px; /* Espaçamento entre os itens da seção */
+  align-items: center; /* Alinha verticalmente os itens ao centro */
+  justify-content: space-between; /* Distribui o espaço disponível entre os itens */
+  padding: 20px;
+  text-align: justify; /* Justifica o texto dentro da seção */
+  text-indent: 10px; /* Indenta o texto no início de cada parágrafo */
+  background-color: #f1e6a8;
+  margin-left: 112px;
+  margin-right: 112px;
+}
+
+/* Estilo para imagens dentro da seção */
+section > img {
+  width: 500px;
+  height: 400px;
+  object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorcer */
+}
+
+/* Estilo para o efeito de hover nas imagens */
+img:hover {
+  transition: opacity 0.2s ease-in; /* Animação para opacidade */
+  opacity: 0.7; /* Torna a imagem um pouco transparente ao passar o mouse */
+}
+
+/* Estilo para o elemento com id "quote" */
+#quote {
+  text-align: center;
+}
+
+/* Estilo para o footer da página */
+footer {
+  color: black;
+  background-color: #c4897d;
+  text-align: center;
+  height: auto;
+  width: auto;
+  padding-bottom: 10px;
+}
+
+/* Media Queries para ajustar o layout para diferentes tamanhos de tela */
+
+/* Estilo para telas com largura máxima de 1200px */
+@media (max-width: 1200px) {
+  section {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  section > img {
+    width: 400px;
+    height: 300px;
+  }
+}
+
+/* Estilo para telas com largura máxima de 768px */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column; /* Organiza os itens do menu verticalmente */
+  }
+
+  .nav-list ul {
+    flex-direction: column;
+  }
+
+  .nav-item {
+    padding-inline: 0; /* Remove o espaçamento lateral interno dos itens da lista */
+  }
+
+  section {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  section > img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Estilo para telas com largura máxima de 480px */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .nome-cabecalho h1 {
+    font-size: 1.5em;
+  }
+
+  .nav-item {
+    padding-inline: 10px;
+  }
+
+  footer {
+    padding-bottom: 5px;
+  }
+}
